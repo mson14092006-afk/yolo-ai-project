@@ -6,6 +6,10 @@ export default function DetectionResult({ imageUrl, result }) {
 
   const { detections, imageWidth, imageHeight } = result
 
+  if (detections.length === 0) {
+    return <p className="result-empty">Không phát hiện phương tiện nào trong ảnh</p>
+  }
+
   return (
     <div className="result">
       <div className="result-canvas">
