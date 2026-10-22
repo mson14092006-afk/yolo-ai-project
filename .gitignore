@@ -1,0 +1,16 @@
+# Frontend
+frontend/node_modules
+frontend/dist
+
+# Backend
+backend/.venv
+backend/__pycache__
+backend/**/__pycache__
+backend/.pytest_cache
+backend/*.pt
+!backend/weights/best.pt
+
+# General
+.env
+*.log
+.DS_Store

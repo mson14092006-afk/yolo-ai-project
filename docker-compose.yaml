@@ -1,0 +1,17 @@
+# frontend/Dockerfile chưa có (bạn tự làm phần containerize frontend),
+# nên compose này hiện chỉ dựng backend. Khi có frontend/Dockerfile,
+# thêm lại service frontend build: ./frontend tương tự bên dưới (đã comment).
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/weights:/app/weights
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

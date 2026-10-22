@@ -5,7 +5,6 @@ export default function Navbar() {
         <span className="navbar-logo">◎</span>
         <span className="navbar-title">YOLO Vision</span>
       </div>
-      <span className="navbar-badge">Phase 1 · Mock Inference</span>
     </header>
   )
 }

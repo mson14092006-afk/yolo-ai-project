@@ -305,3 +305,8 @@ body {
   text-transform: capitalize;
   color: var(--text-muted);
 }
+
+.result-empty {
+  margin-top: 32px;
+  color: var(--text-muted);
+}
